@@ -15,8 +15,8 @@ body {
 }
 
 header {
-  padding: 10px 120px;
-
+  padding: 10px 100px;
+  max-width: 1440px;
   width: 100%;
   background-color: #1b1f28;
   position: fixed;
@@ -30,8 +30,6 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  width: 100%;
 }
 
 .nav-bar__logo {
@@ -420,6 +418,14 @@ footer ul {
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
+  border-bottom: #ffffff 1px solid;
+  padding-bottom: 20px;
+}
+footer h5 {
+  font-weight: 700;
+  text-align: center;
+  color: white;
+  margin-top: 40px;
 }
 
 .ocean {
@@ -472,6 +478,26 @@ a .nav-bar__logo:hover {
     transform: translate3d(0, 5px, 0);
   }
 }
+@media screen and (max-width: 1100px) {
+  .cta {
+    padding: 20px;
+    justify-content: center;
+    gap: 20px;
+  }
+  .cta .nav-bar__logo {
+    width: 90px;
+  }
+
+  .cta .bonus-col {
+    font-size: 14px;
+  }
+  .contant,
+  .game,
+  .faq {
+    padding: 20px;
+    margin-top: 0;
+  }
+}
 
 @media screen and (max-width: 735px) {
   header {
@@ -502,9 +528,13 @@ a .nav-bar__logo:hover {
   h1 {
     font-size: 30px;
     margin-top: 20px;
+    margin-bottom: 40px;
   }
   h2 {
     font-size: 26px;
+  }
+  .cta .global-btn {
+    margin-top: 20px;
   }
   .bonus {
     flex-direction: column;
@@ -515,24 +545,7 @@ a .nav-bar__logo:hover {
     gap: 5px;
     align-items: flex-start;
   }
-  .cta {
-    padding: 20px;
-  }
-  .cta .nav-bar__logo {
-    width: 90px;
-  }
-  .cta .global-btn {
-    margin-top: 20px;
-  }
-  .cta .bonus-col {
-    font-size: 14px;
-  }
-  .contant,
-  .game,
-  .faq {
-    padding: 20px;
-    margin-top: 0;
-  }
+
   footer {
     padding: 20px;
   }
